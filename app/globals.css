@@ -93,3 +93,8 @@
 @utility flex-col-between {
   @apply flex h-full flex-col justify-between;
 }
+
+
+button {
+  @apply font-Inter-Medium! cursor-pointer!
+}
