@@ -3,7 +3,7 @@ export const displayTime = (
   ) => {
     const updateTime = () => {
       const now = new Date();
-      const timeString = now.toLocaleString("fa-IR", {
+      const timeString = now.toLocaleString("en-US", {
         timeZone: "Asia/Tehran",
         hour: "2-digit",
         minute: "2-digit",
