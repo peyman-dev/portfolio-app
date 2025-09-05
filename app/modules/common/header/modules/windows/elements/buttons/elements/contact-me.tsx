@@ -4,7 +4,7 @@ import React from 'react'
 const ContactMeButton = () => {
   return (
     <div>
-        <Button color='iris' variant='classic' className='cursor-pointer'>
+        <Button  variant='solid' radius='large'  className='cursor-pointer! bg-black! hover:bg-zinc-900!'>
             Contact me
         </Button>
     </div>
