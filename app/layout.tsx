@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`**:font-Inter-Regular! antialiased`}
+        className={`**:font-Inter-Regular antialiased`}
       >
         <ApplicationProvider>{children}</ApplicationProvider>
       </body>
