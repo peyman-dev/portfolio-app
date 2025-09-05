@@ -1,5 +1,45 @@
 @import "tailwindcss";
 @import "@radix-ui/themes/styles.css";
+@import "./../public/fonts/index.css";
+/* @font-face {
+  font-family: "Inter-Thin";
+  src: url(./../public/fonts/Inter-Thin.woff2);
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url(./../public/fonts/Inter-Light.woff2);
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(./../public/fonts/Inter-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url(./../public/fonts/Inter-Medium.woff2);
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url(./../public/fonts/Inter-SemiBold.woff2);
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(./../public/fonts/Inter-Bold.woff2);
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: url(./../public/fonts/Inter-ExtraBold.woff2);
+}
+
+@font-face {
+  font-family: "Inter-Black";
+  src: url(./../public/fonts/Inter-Black.woff2);
+} */
 
 :root {
   --background: #ffffff;
@@ -12,6 +52,15 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1260px;
+
+  --font-Inter-Thin: "Inter-Thin";
+  --font-Inter-Light: "Inter-Light";
+  --font-Inter-Regular: "Inter-Regular";
+  --font-Inter-Medium: "Inter-Medium";
+  --font-Inter-SemiBold: "Inter-SemiBold";
+  --font-Inter-Bold: "Inter-Bold";
+  --font-Inter-ExtraBold: "Inter-ExtraBold";
+  --font-Inter-Black: "Inter-Black";
 }
 
 @theme inline {

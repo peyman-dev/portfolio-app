@@ -1,6 +1,6 @@
 import React from 'react'
 import CVDownload from './elements/cv-download'
-import ContactMeButton from './elements/contact-me'
+import ContactMeButton from './contact-me-button'
 
 const Buttons = () => {
   return (
