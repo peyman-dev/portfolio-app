@@ -12,7 +12,7 @@ const LocationTime = () => {
 
   return (
     <div className="text-center">
-      <p className="text-[#808080] text-sm">Zanjan, Iran</p>
+      <p className="text-[#808080] text-sm">My Local Time</p>
       <p className="text-xs">{liveTime}</p>
     </div>
   );
