@@ -8,14 +8,33 @@ interface IProps extends DrawerProps {
   Trigger: JSX.Element;
 }
 
-const Dialog = (props: IProps) => {
+const Dialog = ({ children, Trigger, ...drawerProps }: IProps) => {
   const [isOpen, toggle] = useToggle();
+
+  const RenderDialog = () => {
+    return React.Children.map(children, (child, index) => {
+      if (React.isValidElement(child)) {
+        return (
+          <div key={index} onClick={() => toggle()}>
+            {child}
+          </div>
+        );
+      }
+      return child;
+    });
+  };
 
   return (
     <>
-      <div onClick={() => toggle()}>{props.Trigger}</div>
-      <Drawer  closeIcon={false} closable={false} onClose={() => toggle()} open={isOpen}  {...props}>
-        {props.children}
+      <div onClick={() => toggle()}>{Trigger}</div>
+      <Drawer
+        closeIcon={false}
+        closable={false}
+        onClose={() => toggle()}
+        open={isOpen}
+        {...drawerProps}
+      >
+        {RenderDialog()}
       </Drawer>
     </>
   );

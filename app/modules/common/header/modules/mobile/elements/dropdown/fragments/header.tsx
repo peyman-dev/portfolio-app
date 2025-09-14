@@ -1,12 +1,13 @@
-import React from 'react'
-import Logo from '../../logo'
+import React from "react";
+import Logo from "../../logo";
 
 const Header = () => {
   return (
-    <header className='mb-6!'>
-        <Logo />
-    </header>
-  )
-}
+    <header className="mb-6!">
+      <Logo />
 
-export default Header
+    </header>
+  );
+};
+
+export default Header;

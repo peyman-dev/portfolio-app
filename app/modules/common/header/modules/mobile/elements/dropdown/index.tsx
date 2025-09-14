@@ -16,6 +16,7 @@ const DropdownMenu = () => {
   return (
     <div>
       <Dialog className="*:flex-col-between  *:-h-full!" Trigger={Trigger}>
+          <button close-trigger>X</button>
         <div>
           <Header />
           <Items />

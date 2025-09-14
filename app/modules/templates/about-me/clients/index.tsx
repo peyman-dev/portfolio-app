@@ -20,7 +20,7 @@ const Clients = () => {
                 src={data.image as string}
                 width={1000}
                 height={60}
-                className="w-[60%]! odd:order-0!"
+                className="w-[60%]! odd:order-0! order-5!"
                 alt="Logo"
               />
             </div>
