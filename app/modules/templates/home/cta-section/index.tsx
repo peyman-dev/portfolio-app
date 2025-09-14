@@ -7,8 +7,8 @@ import Image from "./modules/image";
 
 const CTASection = () => {
   return (
-    <section className="mt-[120px] p-8 border-[#DDE0D1] grid grid-cols-2 gap-15 bg-white rounded-[20px] border h-[336px]! overflow-hidden!">
-      <div className="flex-col-between">
+    <section className="mt-[120px] p-8 border-[#DDE0D1] grid lg:grid-cols-2 gap-15 bg-white rounded-[20px] border lg:h-[336px]! overflow-hidden!">
+      <div className="flex-col-between gap-5">
         <div className="space-y-5">
           <Title />
           <Description />
