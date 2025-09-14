@@ -1,6 +1,5 @@
 import { generateRandomID } from "@/app/core/settings";
 import { ChevronsUp, GalleryVertical, Handshake, Rocket } from "lucide-react";
-import FigmaIcon from "@/images/figma-icon.png"
 
 export const values = [
   {
@@ -25,27 +24,3 @@ export const values = [
   },
 ];
 
-export const clients = [
-    {
-        id: generateRandomID(),
-        hasText: true,
-        title: "Website developed",
-        value: "+10"
-    },
-    {
-        id: generateRandomID(),
-        hasText: false,
-        image: FigmaIcon.src
-    },
-    {
-        id: generateRandomID(),
-        hasText: true,
-        title: "Project Finished",
-        value: "+12"
-    },
-    {
-        id: generateRandomID(),
-        hasText: false,
-        image: FigmaIcon.src
-    },
-]
