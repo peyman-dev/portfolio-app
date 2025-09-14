@@ -1,9 +1,11 @@
-import React from 'react'
+// import { experiences } from "@/app/core/settings";
+import Image from "next/image";
+import React from "react";
 
 const MyExperiences = () => {
   return (
-    <div>MyExperiences</div>
-  )
-}
+ <></>
+  );
+};
 
-export default MyExperiences
+export default MyExperiences;
