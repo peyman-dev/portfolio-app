@@ -1,4 +1,4 @@
-import Dialog from "@/app/modules/ui/dialog";
+import Dialog from "@/app/_modules/ui/dialog";
 import { Menu } from "lucide-react";
 import React from "react";
 import Header from "./fragments/header";

@@ -1,4 +1,4 @@
-import { navigation } from "@/app/modules/common/header/settings";
+import { navigation } from "@/app/_modules/common/header/settings";
 import Link from "next/link";
 import React from "react";
 import LocationTime from "../../../../windows/elements/location-time";

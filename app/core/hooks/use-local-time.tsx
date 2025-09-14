@@ -1,5 +1,5 @@
 "use client";
-import { displayTime } from "@/app/modules/common/header/settings";
+import { displayTime } from "@/app/_modules/common/header/settings";
 import React, { useEffect, useState } from "react";
 
 const useLocalTime = () => {

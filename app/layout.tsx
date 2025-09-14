@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ApplicationProvider from "./core/providers/app-provider";
-import Header from "./modules/common/header";
+import Header from "./_modules/common/header";
 import { ReactLenis } from "lenis/react";
 
 export const metadata: Metadata = {

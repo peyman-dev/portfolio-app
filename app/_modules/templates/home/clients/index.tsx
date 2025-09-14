@@ -1,4 +1,4 @@
-import Container from '@/app/modules/common/container'
+import Container from '@/app/_modules/common/container'
 import React from 'react'
 import Headline from './modules/headline'
 import ClientsCompanies from './modules/clients'

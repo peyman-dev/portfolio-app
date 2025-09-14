@@ -1,4 +1,4 @@
-import Container from "@/app/modules/common/container";
+import Container from "@/app/_modules/common/container";
 import React from "react";
 import Title from "./elements/title";
 import Steps from "./elements/steps";
