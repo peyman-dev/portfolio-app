@@ -4,7 +4,7 @@ import { activeUserStyles, motionConfigs } from "../../settings";
 import * as motion from "motion/react-client";
 
 interface IProps {
-  id: string;
+  id: any;
   userImg: string;
   user: {
     name: string;

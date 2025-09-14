@@ -5,8 +5,8 @@ import Buttons from "./elements/buttons";
 
 const Content = () => {
   return (
-    <div className="flex flex-col gap-y-12">
-      <div className="space-y-6">
+    <div className="flex flex-col gap-y-8 md:gap-y-12">
+      <div className="md:space-y-6 space-y-5">
         <Title />
         <Description />
       </div>

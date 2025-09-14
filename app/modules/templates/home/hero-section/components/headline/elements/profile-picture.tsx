@@ -8,7 +8,7 @@ const ProfilePicture = () => {
       width={52}
       height={52}
       src={"/images/my-picture.jpg"}
-      className="rounded-full" 
+      className="rounded-full mx-auto md:mx-0!" 
       objectFit="cover"
     />
   );

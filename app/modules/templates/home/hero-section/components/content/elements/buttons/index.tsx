@@ -4,7 +4,7 @@ import SeeMyWorks from './components/see-my-works'
 
 const Buttons = () => {
   return (
-    <div className='flex-ic *:rounded-xl!  gap-5 *:h-12! *:flex-center! *:gap-2!'>
+    <div className='flex-ic *:rounded-xl! gap-2 md:gap-5  md:justify-start justify-center *:h-12! *:flex-center! *:gap-2!'>
         <TalkToMe />
         <SeeMyWorks />
     </div>

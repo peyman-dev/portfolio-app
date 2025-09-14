@@ -5,7 +5,7 @@ import LocationTime from "./elements/location-time";
 
 const WindowsNavbar = () => {
   return (
-    <nav className="flex-between h-25 container">
+    <nav className="flex-between h-25 container md:flex md:visible hidden invisible">
       <Navigation />
       <div className="flex-ic gap-7">
         <LocationTime />

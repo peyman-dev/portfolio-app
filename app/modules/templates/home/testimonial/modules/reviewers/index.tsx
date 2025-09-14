@@ -11,9 +11,10 @@ const Reviewers = () => {
     setActiveIndex(index);
   };
   return (
-    <div className="flex-center gap-10">
+    <div className="flex-center gap-6 md:gap-10">
       {items.map((user, i) => (
-        <Item
+        <Item 
+          key={i}
           {...user}
           handleClick={() => {
             handleClick(i);

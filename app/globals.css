@@ -51,7 +51,7 @@
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
-  --breakpoint-xl: 1260px;
+  --breakpoint-xl: 1180px;
 
   --font-Inter-Thin: "Inter-Thin";
   --font-Inter-Light: "Inter-Light";
@@ -71,7 +71,7 @@
 }
 
 @utility container {
-  @apply mx-auto;
+  @apply mx-auto w-[90%] md:w-full;
 }
 
 @utility flex-center {

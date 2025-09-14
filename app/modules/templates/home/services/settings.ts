@@ -12,28 +12,28 @@ import Framer2 from "@/public/images/framer-2.png";
 
 export const services = [
   {
-    id: crypto.randomUUID(),
+    id: Math.random() * Math.random() * Math.random(),
     title: "Landing page design",
     description:
       "Crafting compelling first impressions with our innovative landing page designs. Elevate your online presence effortlessly.",
     images: [Landing1.src, Landing2.src],
   },
   {
-    id: crypto.randomUUID(),
+    id: Math.random() * Math.random() * Math.random(),
     title: "Company website design",
     description:
       "Transform your online presence with our sleek and modern company website design.",
     images: [Company1.src, Company2.src],
   },
   {
-    id: crypto.randomUUID(),
+    id: Math.random() * Math.random() * Math.random(),
     title: "Full pages website design",
     description:
       "Crafting immersive and engaging full-page website designs that captivate audiences and deliver a seamless user experience.",
     images: [Responsive1.src, Responsive2.src],
   },
   {
-    id: crypto.randomUUID(),
+    id: Math.random() * Math.random() * Math.random(),
     title: "Framer development",
     description:
       "Transforming design into captivating digital realities with precision and innovation using design tools called Framer.",
