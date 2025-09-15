@@ -2,7 +2,7 @@ import React from "react";
 import MyName from "./fragments/my-name";
 import MyJob from "./fragments/my-job";
 import Description from "./fragments/description";
-import SocialMedias from "./fragments/social-medias";
+import SocialMedias from "../../../../../common/social-medias";
 
 const Headline = () => {
   return (

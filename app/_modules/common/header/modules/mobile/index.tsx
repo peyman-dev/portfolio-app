@@ -4,7 +4,7 @@ import DropdownMenu from './elements/dropdown'
 
 const MobileNavbar = () => {
   return (
-    <nav className='flex-between h-20 container'>
+    <nav className='flex-between h-20 container lg:hidden lg:invisible'>
         <Logo />
         <DropdownMenu />
     </nav>
