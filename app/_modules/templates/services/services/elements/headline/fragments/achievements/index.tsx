@@ -1,11 +1,11 @@
 import React from 'react'
 import Item from './item'
+import { achievements } from '../../../../settings'
 
 const Achievements = () => {
   return (
     <div className='grow *:w-1/2 flex-between'>
-        <Item />
-        <Item />
+      {achievements.map((item ,i ) => <Item {...item} key={item.id}/>)}
     </div>
   )
 }

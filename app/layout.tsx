@@ -3,6 +3,7 @@ import "./globals.css";
 import ApplicationProvider from "./core/providers/app-provider";
 import Header from "./_modules/common/header";
 import { ReactLenis } from "lenis/react";
+import { ModalProvider } from "./core/hooks/use-modal";
 
 export const metadata: Metadata = {
   title:
@@ -22,9 +23,11 @@ export default function RootLayout({
         className={`**:font-Inter-Regular antialiased`}
         cz-shortcut-listen="true"
       >
-        <ReactLenis root />
-        <Header />
-        <ApplicationProvider>{children}</ApplicationProvider>
+        <ModalProvider>
+          <ReactLenis root />
+          <Header />
+          <ApplicationProvider>{children}</ApplicationProvider>
+        </ModalProvider>
       </body>
     </html>
   );

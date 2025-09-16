@@ -32,9 +32,9 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
         <Drawer
           open={isOpen}
           onClose={closeModal}
-          title="Modal Title"
-          placement="right"
+          placement="bottom"
           destroyOnClose
+          className='min-h-max! min-w-max! w-dvw!'
         >
           {modalContent}
         </Drawer>
@@ -42,8 +42,8 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
         <Modal
           open={isOpen}
           onCancel={closeModal}
-          title="Modal Title"
           footer={null}
+          className='min-w-max!'
           destroyOnClose
         >
           {modalContent}

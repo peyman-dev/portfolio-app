@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const Item = () => {
+const Item = (props: any) => {
+  console.log(props);
   return (
-    <div>Item</div>
-  )
-}
+    <article className="space-y-1">
+      <p className="text-xl">
+        <strong>{props?.value || "Loading ..."}</strong>
+      </p>
+      <p className="text-[#808080]">
+        {props?.text || "Loading ..."}
+      </p>
+    </article>
+  );
+};
 
-export default Item
+export default Item;
