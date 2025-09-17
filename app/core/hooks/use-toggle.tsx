@@ -1,14 +1,10 @@
 "use client";
 import React, { useState } from "react";
 
-const useToggle = (): [isOpen: boolean, toggle: (optionalState?: boolean) => void] => {
+const useToggle = (): [isOpen: boolean, toggle: () => void] => {
   const [state, setState] = useState(false);
-  const toggle = (optionalState?: boolean) => {
-    if (typeof optionalState == "undefined") {
-      setState(!state);
-    } else {
-      setState(optionalState);
-    }
+  const toggle = () => {
+    setState(!state);
   };
   return [state, toggle];
 };
