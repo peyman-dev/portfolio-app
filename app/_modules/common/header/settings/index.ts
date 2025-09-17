@@ -33,6 +33,11 @@ export const navigation = [
   },
   {
     id: Math.random() * Math.random() * Math.random(),
+    title: "Services",
+    href: "/services"
+  },
+  {
+    id: Math.random() * Math.random() * Math.random(),
     title: "Blog",
     href: "/blog"
   },
