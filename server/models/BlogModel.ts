@@ -23,6 +23,10 @@ export const BlogSchema = new Schema(
       ref: "User",
       required: true,
     },
+    comments: {
+        type: mongoose.Types.ObjectId,
+        ref: "Comment"
+    }
   },
   {
     timestamps: true,
