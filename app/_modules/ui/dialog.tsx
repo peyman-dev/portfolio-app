@@ -1,40 +1,35 @@
 "use client";
 import useToggle from "@/app/core/hooks/use-toggle";
 import { Drawer, DrawerProps } from "antd";
-import React, { JSX, ReactNode } from "react";
+import { X } from "lucide-react";
+import React, { ReactNode } from "react";
 
 interface IProps extends DrawerProps {
   children: ReactNode;
-  Trigger: JSX.Element;
+  Trigger: React.ReactElement;
+  closeTrigger?: boolean;
 }
 
-const Dialog = ({ children, Trigger, ...drawerProps }: IProps) => {
+const Dialog = ({
+  children,
+  closeTrigger,
+  Trigger,
+  ...drawerProps
+}: IProps) => {
   const [isOpen, toggle] = useToggle();
-
-  const RenderDialog = () => {
-    return React.Children.map(children, (child, index) => {
-      if (React.isValidElement(child)) {
-        return (
-          <div key={index} onClick={() => toggle()}>
-            {child}
-          </div>
-        );
-      }
-      return child;
-    });
-  };
 
   return (
     <>
-      <div onClick={() => toggle()}>{Trigger}</div>
+      <div onClick={toggle}>{Trigger}</div>
       <Drawer
         closeIcon={false}
         closable={false}
-        onClose={() => toggle()}
+        onClose={toggle}
         open={isOpen}
         {...drawerProps}
       >
-        {RenderDialog()}
+        {closeTrigger && <button className="absolute! right-4!" onClick={toggle}><X /></button>}
+        {children}
       </Drawer>
     </>
   );
