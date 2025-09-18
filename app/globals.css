@@ -56,9 +56,40 @@
 }
 
 @utility container-800px {
-  @apply max-w-[800px] mx-auto 
+  @apply max-w-[800px] mx-auto;
 }
 
 button {
   @apply font-Inter-Medium! cursor-pointer!;
 }
+
+.ck-editor {
+  @apply overflow-hidden!;
+}
+
+/* .ck-content {
+  @apply rounded-b-2xl!;
+} */
+
+/* .ck-toolbar {
+  @apply rounded-t-2xl!;
+
+  & > * {
+    @apply rounded-t-2xl!;
+  }
+} */
+
+.ck-on {
+  @apply bg-black! text-white! rounded-lg!;
+}
+/* 
+.ck-editor__top {
+  @apply rounded-t-2xl!;
+  & > * {
+    @apply rounded-t-2xl!;
+  }
+}
+
+.ck-sticky-panel__content {
+  @apply rounded-t-2xl!;
+} */
