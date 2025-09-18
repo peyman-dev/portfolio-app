@@ -1,7 +1,16 @@
 import mongoose, { model, models, Schema } from "mongoose";
 
 export const CommentSchema = new Schema({
-  user: { type: mongoose.Types.ObjectId, ref: "User" },
+  user: {
+    fullName: {
+      type: String,
+      required: true
+    },
+    email: {
+      type: String,
+      required: false,
+    },
+  },
   isPublished: {
     type: Boolean,
     required: true,
