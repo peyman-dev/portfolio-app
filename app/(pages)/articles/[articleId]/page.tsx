@@ -1,5 +1,13 @@
 import Banner from "@/app/_modules/common/articles/article/banner";
+import ArticleBody from "@/app/_modules/common/articles/article/body";
+import Comments from "@/app/_modules/common/articles/article/comments";
 import HeroDetails from "@/app/_modules/common/articles/article/hero-details";
+import Container from "@/app/_modules/common/container";
+import ContainerWithParent from "@/app/_modules/common/container/container-with-parent";
+import CTASection from "@/app/_modules/templates/home/cta-section";
+import HaveAProject from "@/app/_modules/templates/home/have-a-project";
+import Testimonial from "@/app/_modules/templates/home/testimonial";
+import WrapInComingSoon from "@/app/_modules/ui/coming-soon";
 import React from "react";
 
 interface PageProps {
@@ -15,6 +23,17 @@ const Page = async ({ params }: PageProps) => {
     <>
       <Banner />
       <HeroDetails />
+      <ContainerWithParent>
+        <ArticleBody />
+        {/* <Testimonial /> */}
+      </ContainerWithParent>
+      <Container className="mt-[120px]">
+        <WrapInComingSoon>
+          <Comments />
+        </WrapInComingSoon>
+        <CTASection />
+      </Container>
+      <HaveAProject />
     </>
   );
 };
