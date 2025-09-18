@@ -52,3 +52,5 @@ export const navigation = [
     href: "/contact-me"
   },
 ]
+
+export const isDashboardRoute = (path: string) => path.startsWith('/dashboard')
