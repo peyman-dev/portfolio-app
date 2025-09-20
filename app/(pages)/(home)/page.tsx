@@ -8,11 +8,13 @@ import UnderHeroSection from "@/app/_modules/templates/home/under-hero";
 import React from "react";
 import CTASection from "../../_modules/templates/home/cta-section";
 import HaveAProject from "@/app/_modules/templates/home/have-a-project";
+import Articles from "@/app/_modules/templates/home/articles";
 
 const HomePage = () => {
   return (
     <>
       <HeroSection />
+      <Articles />
       <UnderHeroSection />
       <Clients />
       <ContainerWithParent>
